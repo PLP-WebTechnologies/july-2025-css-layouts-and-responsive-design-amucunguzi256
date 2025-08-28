@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Conference Registration - Health Data Summit 2025</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <h1>Health Data Summit 2025</h1>
+            <p>Bringing together public health professionals, data scientists, and policymakers.</p>
+        </div>
+    </header>
+
+    <!-- Navigation using Flexbox -->
+    <nav>
+        <div class="nav-container">
+            <a href="#about">About</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#speakers">Speakers</a>
+            <a href="#register">Register</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Layout using CSS Grid -->
+    <main class="grid-container">
+
+        <!-- Left Column (Main Content) -->
+        <div class="content">
+            <section id="about" class="card">
+                <h2>About the Summit</h2>
+                <p>The Health Data Summit is a two-day event exploring how data science transforms healthcare delivery and public health. The event features hands-on workshops, poster sessions, and keynote talks from leading researchers.</p>
+
+                <h3>What you will get</h3>
+                <ul>
+                    <li>Practical workshops on health data pipelines</li>
+                    <li>Networking sessions with public health organizations</li>
+                    <li>Poster competition with prizes</li>
+                </ul>
+            </section>
+
+            <section class="card">
+                <h2>Intro Video & Venue</h2>
+                <img src="https://images.pexels.com/photos/3873176/pexels-photo-3873176.jpeg" alt="Venue: Grand Hall, City Convention Centre" width="400">
+                <video controls width="400">
+                    <source src="sample-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <section id="schedule" class="card">
+                <h2>Event Schedule</h2>
+                <p><i>Day 1 to Day 5</i></p>
+                <table>
+                    <tr>
+                        <th>Time</th>
+                        <th>Session</th>
+                        <th>Room</th>
+                    </tr>
+                    <tr>
+                        <td>09:00 - 09:30</td>
+                        <td>Registration & Coffee</td>
+                        <td>Foyer</td>
+                    </tr>
+                    <tr>
+                        <td>09:30 - 10:30</td>
+                        <td>Data Driven Public Health</td>
+                        <td>Main Hall</td>
+                    </tr>
+                    <tr>
+                        <td>11:00 - 12:30</td>
+                        <td>Data Visualization</td>
+                        <td>Room A</td>
+                    </tr>
+                    <tr>
+                        <td>02:00 - 04:30</td>
+                        <td>Panel: Ethics and Privacy</td>
+                        <td>Main Hall</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- Speakers section with Flexbox cards -->
+            <section id="speakers" class="card">
+                <h2>Featured Speakers</h2>
+                <div class="speakers-flex">
+                    <div class="speaker-card">Prof. Ada N. — Epidemiology & Data Integration</div>
+                    <div class="speaker-card">Dr. Ben T. — Machine Learning in Healthcare</div>
+                    <div class="speaker-card">Ms. Carla R. — Public Health Policy & Data</div>
+                </div>
+            </section>
+
+            <!-- Registration form -->
+            <section id="register" class="card">
+                <h2>Register for the Summit</h2>
+                <p>Please complete the form below. Fields marked with * are required.</p>
+
+                <form>
+                    <fieldset>
+                        <legend>Attendee Details</legend>
+                        <label for="name">Full Name*:</label><br>
+                        <input type="text" id="name" name="name" placeholder="Jane Example" required><br><br>
+
+                        <label for="email">Email Address*:</label><br>
+                        <input type="email" id="email" name="email" placeholder="example@example.com" required><br><br>
+
+                        <label for="phone">Phone Number*:</label><br>
+                        <input type="tel" id="phone" name="phone" placeholder="+256 700 000 000" required><br><br>
+
+                        <label for="role">Role:</label><br>
+                        <input type="text" id="role" name="role" placeholder="e.g. Software Developer"><br>
+                    </fieldset><br>
+
+                    <fieldset>
+                        <legend>Ticket & Sessions</legend>
+                        <label for="ticket">Ticket type*:</label><br>
+                        <select id="ticket" name="ticket" required>
+                            <option value="">Choose ticket...</option>
+                            <option value="Standard">Standard - $100</option>
+                            <option value="Student">Student - $50</option>
+                            <option value="Speaker">Speaker - Free</option>
+                        </select><br><br>
+
+                        <label for="workshop">Choose a workshop (optional):</label><br>
+                        <select id="workshop" name="workshop">
+                            <option value="">--None--</option>
+                            <option value="AI">Artificial Intelligence</option>
+                            <option value="ML">Intro to ML for Health Data</option>
+                            <option value="Viz">Data Visualization</option>
+                        </select><br><br>
+
+                        <label for="date">Arrival date*:</label><br>
+                        <input type="date" id="date" name="date" required><br><br>
+
+                        <label for="guests">Number of guests (0-4):</label><br>
+                        <input type="number" id="guests" name="guests" min="0" max="4">
+                    </fieldset><br>
+
+                    <fieldset>
+                        <legend>Short Bio and Confirmation</legend>
+                        <label for="bio">Tell us about your work (max 300 characters):</label><br>
+                        <textarea id="bio" name="bio" rows="5" cols="50" maxlength="300"
+                        placeholder="I am a public health specialist working with..."></textarea><br><br>
+
+                        <label for="confirm">
+                            <input type="checkbox" id="confirm" name="confirm" required>
+                            I confirm the information provided is correct*
+                        </label><br><br>
+
+                        <button type="submit" class="btn-primary">Submit Registration</button>
+                        <button type="reset" class="btn-secondary">Clear Form</button>
+                    </fieldset>
+                </form>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-container">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">Summit Info</a></li>
+                    <li><a href="#schedule">Full Schedule</a></li>
+                    <li><a href="#register">Register</a></li>
+                </ul>
+
+                <h3>Highlights</h3>
+                <div class="highlight-card"> Global Experts</div>
+                <div class="highlight-card"> Innovative Ideas</div>
+                <div class="highlight-card"> Networking</div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Health Data Summit · <a href="#top">Back to top</a></p>
+        </div>
+    </footer>
+</body>
+</html>

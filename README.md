@@ -1,51 +1,37 @@
-# 🧩 Assignment: CSS Layouts & Responsive Web Design
 
-## Overview
+# Health Data Summit 2025 - Responsive Website
 
-In this assignment, you'll learn how to bring structure, flexibility, and responsiveness to your web pages using modern CSS layout techniques—**Flexbox** and **Grid**. You'll also apply **Responsive Web Design (RWD)** principles to ensure your page adapts beautifully across screen sizes and devices.
+## Project Overview
+This project is a responsive multi-section webpage for the **Health Data Summit 2025**, built with **HTML5** and **CSS3**. It showcases the application of **Flexbox** and **CSS Grid** for layout, and **media queries** to adapt to different screen sizes, including mobile, tablet, and desktop.  
 
-## Objective
+The website provides information about the summit, speakers, schedule, registration form, and a sidebar with quick links and highlights.  
 
-Build a responsive multi-section webpage that uses **Flexbox** and **CSS Grid** for layout and demonstrates how content adjusts across mobile, tablet, and desktop views. You'll showcase your ability to align and position content with precision, using media queries and flexible units to enhance the user experience on any device.
+---
 
-## What You’ll Practice
+## Technologies Used
 
-* Structuring content using Flexbox for 1D layouts (rows or columns)
-* Using CSS Grid for complex 2D layouts
-* Applying responsive design techniques using media queries and relative units (`%, rem`, `vw`, etc.)
-* Creating layouts that gracefully adapt to different screen sizes without breaking
+- HTML5
+- CSS3
+  - Flexbox
+  - CSS Grid
+  - Media Queries
+  - Relative units (%, rem, vw)
+- No external libraries or frameworks
 
-## Instructions
+---
 
-Create a responsive webpage that contains multiple sections—such as a header, navigation bar, content area, sidebar, and footer. You are encouraged to use Flexbox in one part of the page and Grid in another (e.g., Grid for the main layout and Flexbox for cards or navigation alignment).
+## How to Run
 
-Make sure your layout:
+1. Clone or download the repository.
+2. Open `index.html` in any modern browser.
+3. All styles are in `style.css`; no external dependencies are required.
 
-* Looks good on **desktop**, **tablet**, and **mobile**
-* Uses media queries to adjust column layout, spacing, or visibility
-* Demonstrates thoughtful content placement using both layout models
+---
 
-Avoid using any CSS frameworks or libraries—build everything with raw CSS.
+## Notes
 
-## Deliverables
+- Images and videos can be replaced with actual event media.
+- Form inputs are not connected to a backend; they are purely HTML/CSS demonstration.
+- Designed with clarity, maintainability, and accessibility in mind.
 
-Submit the following:
-
-* `index.html`: Your HTML5 structure
-* `style.css`: Your responsive CSS file with Flexbox, Grid, and media queries
-
-The code should demonstrate:
-
-* Clear use of Flexbox and Grid
-* Responsiveness with proper breakpoints
-* Clean, maintainable CSS structure with helpful comments
-
-## Tips
-
-* Effective use of Flexbox and CSS Grid layout techniques
-* Visual clarity and logical content flow across screen sizes
-* Proper use of media queries and responsive units
-* Code readability, organization, and best practices
-* Creativity and attention to layout detail
-
-
+---
